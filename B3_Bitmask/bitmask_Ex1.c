@@ -53,6 +53,24 @@ void listSelectedFeatures(uint8_t features) {
 
 
 int main() {
+
+    uint8_t user1 = 0b00001110;
+    uint8_t user2 = 0b10101010;
+    
+    uint8_t a = user1 & user2;
+    uint8_t b = user1 | user2;
+    uint8_t c = user1 ^ user2;
+    uint8_t d = ~user1;
+    uint8_t e = user1 >> 3;
+    uint8_t f = user1 <<2;
+
+    printf("%d\n",a);
+    printf("%d\n",b);
+    printf("%d\n",c);
+    printf("%d\n",d);
+    printf("%d\n",e);
+    printf("%d\n",f);
+
     uint8_t options = 0;
 
     // Thêm tính năng 
